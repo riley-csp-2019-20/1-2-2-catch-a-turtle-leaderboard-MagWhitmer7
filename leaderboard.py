@@ -23,10 +23,9 @@ def load_leaderboard(file_name, leader_names, leader_scores):
     while (line[index] != ","):
       leader_name = leader_name + line[index] 
       index = index + 1
-      print("leader name is:" leader_name)
-
+    print(leader_name)
     # TODO 2: add the leader name to the list
-
+  leader_names.apend(leader_name)
     
     # TODO 3: read the player score using a similar loop
 
@@ -35,7 +34,7 @@ def load_leaderboard(file_name, leader_names, leader_scores):
 
 
   leaderboard_file.close()
-
+load_leaderboard("a122_leaderboard.txt", [], [])
 
 # update leaderboard by inserting the current player and score to the list at the correct position
 def update_leaderboard(file_name, leader_names, leader_scores, player_name, player_score):
@@ -71,7 +70,7 @@ def update_leaderboard(file_name, leader_names, leader_scores, player_name, play
 def draw_leaderboard(leader_names, leader_scores, high_scorer, turtle_object, player_score):
   
   # clear the screen and move turtle object to (-200, 100) to start drawing the leaderboard
-  font_setup = ("Arial", 20, "normal")
+  font_setup = ("Times New Roman", 20, "normal")
   turtle_object.clear()
   turtle_object.penup()
   turtle_object.goto(-200,100)

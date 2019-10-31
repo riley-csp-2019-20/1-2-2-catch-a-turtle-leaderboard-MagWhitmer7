@@ -6,7 +6,7 @@ import leaderboard as lb
 
 #-----game configuration----
 shape = "circle"
-size= .5
+size= 3
 colour= "palegreen"
 score= 0
 
@@ -67,6 +67,7 @@ def countdown():
     counter.write("Time's Up", font=font_setup)
     timer_up = True
     game_over()
+    manage_leaderboard()
   else:
     counter.write("Timer: " + str(timer), font=font_setup)
     timer -= 1
