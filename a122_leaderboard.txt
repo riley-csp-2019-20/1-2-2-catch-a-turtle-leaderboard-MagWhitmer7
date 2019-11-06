@@ -1,4 +1,5 @@
-gaby,5
-lynn,4
-jaz,2
-john,1
+Xerxes,30
+Carol,21
+Karen,17
+mw,13
+Bob,10

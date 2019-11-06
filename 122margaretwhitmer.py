@@ -11,7 +11,7 @@ colour= "palegreen"
 score= 0
 
 font_setup = ("Times New Roman", 20, "italic")
-timer = 5
+timer = 30
 counter_interval = 1000   #1000 represents 1 second
 timer_up = False
 
